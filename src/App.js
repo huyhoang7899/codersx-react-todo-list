@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+           
   return (
     <div className="App">
       <header className="App-header">
@@ -18,8 +19,26 @@ function App() {
         >
           Learn React
         </a>
+        <TodoList/>
       </header>
+      
     </div>
+  );
+}
+
+function TodoList() {
+  const todos = [
+    'Go to market',
+    'Buy food',
+    'Make dinner'
+  ];
+
+  const Todos = todos.map(todo => <li>{todo}</li>);
+
+  return (
+    <ul>
+      {Todos}
+    </ul>
   );
 }
 
