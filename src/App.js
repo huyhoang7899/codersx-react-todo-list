@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header.js';
+import LoginForm from './components/LoginForm.js';
 
 function App() {
            
@@ -8,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -18,28 +20,30 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-        <TodoList/>
+        </a> */}
+        <Header />
+        <LoginForm />
+        {/* <TodoList/> */}
       </header>
       
     </div>
   );
 }
 
-function TodoList() {
-  const todos = [
-    'Go to market',
-    'Buy food',
-    'Make dinner'
-  ];
+// function TodoList() {
+//   const todos = [
+//     'Go to market',
+//     'Buy food',
+//     'Make dinner'
+//   ];
 
-  const Todos = todos.map(todo => <li>{todo}</li>);
+//   const Todos = todos.map(todo => <li>{todo}</li>);
 
-  return (
-    <ul>
-      {Todos}
-    </ul>
-  );
-}
+//   return (
+//     <ul>
+//       {Todos}
+//     </ul>
+//   );
+// }
 
 export default App;

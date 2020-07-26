@@ -27,6 +27,18 @@
 .App-link {
   color: #61dafb;
 }
+.content-header{
+  width: 100%;
+}
+.content-header .img-fluid{
+  height: 70px;
+  width: auto;
+}
+.form-signin {
+  width: 50%;
+  /* font-family: Roboto, sans-serif; */
+  font-size: 20px;
+}
 
 @keyframes App-logo-spin {
   from {
